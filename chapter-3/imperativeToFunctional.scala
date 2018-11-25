@@ -26,3 +26,7 @@ def printArgs2(args: Array[String]): Unit = {
 def printArgs3(args: Array[String]): Unit = args.foreach(println)
 
 def formatArgs(args: Array[String]): String = args.mkString("\n")
+
+// test
+val res = formatArgs(Array("zero", "one", "two"))
+assert(res == "zero\none\ntwo")
